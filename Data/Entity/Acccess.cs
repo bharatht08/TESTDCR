@@ -30,5 +30,13 @@ namespace Lshp.BaseWebApi.Data.Entity
         /// Accesstype defines AccessLevel
         /// </summary>
         public string LEAccessType{get;set;}
+		/// <summary>
+        /// Accesstype defines AccessLevel
+        /// </summary>
+        public string SELEAccessType{get;set;}
+		/// <summary>
+        /// Accesstype defines AccessLevel
+        /// </summary>
+        public string TSRLEAccessType{get;set;}
     }
 }

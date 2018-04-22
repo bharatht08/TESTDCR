@@ -26,7 +26,25 @@ namespace Lshp.BaseWebApi.Controllers
         [HttpGet("GetAccessableResources")]
         public dynamic GetAccessableResources(int UserID)
         {
-            return _resource.GetTTTMyAccessableResources(UserID);
+            return DER_resource.GetTTTMyAccessableResources(UserID);
+        } 
+		
+		/// <summary>
+        ///  GetAccessableResources
+        /// </summary>
+        [HttpGet("GetAccessableResources")]
+        public dynamic GetAccessableResources(int UserID)
+        {
+            return DER_resource.GetTTTMyAccessableResources(UserID);
+        } 
+		
+		/// <summary>
+        ///  GetAccessableResources
+        /// </summary>
+        [HttpGet("GetAccessableResources")]
+        public dynamic GetAccessableResources(int UserID)
+        {
+            return DER_resource.GetTTTMyAccessableResources(UserID);
         } 
 		
 		/// <summary>
