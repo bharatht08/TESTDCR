@@ -22,5 +22,9 @@ namespace Microsoft.AspNetCore.Mvc
             ////    protocol: scheme);
             return string.Empty;
         }
+		//TYU\\
+		public static string EmailConfirmationLink(this IUrlHelper urlHelper, string userId, string code, string scheme)
+        {
+		}
     }
 }

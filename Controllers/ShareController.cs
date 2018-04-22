@@ -21,13 +21,23 @@ namespace Lshp.BaseWebApi.Controllers
         {
             this._shareResource = shareResource;
         }
-/// Added By Bharath
+/// DSERAdded By Bharath
  public ShareController(IShareResource shareResource)
         {
             this._shareResource = shareResource;
         }
+		
         /// <summary>
         ///  GetAccessableResources
+        /// </summary>
+        [HttpGet("GetSharedList")]
+        public dynamic GetSharedList(int ResourceID)
+        {
+            return _shareResource.SharedList(ResourceID);
+        } 
+		
+		 /// <summary>
+        ///  BHARTH_POTGetAccessableResources
         /// </summary>
         [HttpGet("GetSharedList")]
         public dynamic GetSharedList(int ResourceID)

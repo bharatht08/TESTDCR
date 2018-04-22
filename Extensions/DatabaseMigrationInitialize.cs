@@ -37,5 +37,15 @@ namespace Lshp.BaseWebApi.Extensions
                 serviceScope.ServiceProvider.GetRequiredService<RepositoryContext>().Database.Migrate();
             }
         }
+		
+		
+		///serviceScope.ServiceProvider.GetRequiredService<RepositoryContext>().Database.Migrate();
+	 public static void InitializeDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                serviceScope.ServiceProvider.GetRequiredService<RepositoryContext>().Database.Migrate();
+            }
+        }
     }
 }
