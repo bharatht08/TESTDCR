@@ -6,6 +6,10 @@ namespace Lshp.BaseWebApi.Extensions.Attributes
     /// <summary>
     /// SecurityHeadersAttribute
     /// </summary>
+	
+	 //   var csp = "default-src  'self' 'unsafe-inline';";
+                // an example if you need client images to be displayed from twitter
+                //var csp = "default-src 'self'; img-src 'self' https://url.com";
     public class SecurityHeadersAttribute : ActionFilterAttribute
     {
         /// <summary>

@@ -48,6 +48,15 @@ namespace Lshp.BaseWebApi.Mappings
         {
            return AutoMapper.Mapper.Map<ResourceView>(resource);
         }
+		
+		/// <summary>
+        /// NEW REP Bharath Map from Resource to ResourceViewModel
+        /// </summary>
+        #region Resource to ResourceViewModel
+        public static ResourceView ResourceToResourceViewModel(Resource resource)
+        {
+           return AutoMapper.Mapper.Map<ResourceView>(resource);
+        }
 
         /// <summary>
         /// Map from Resource to ResourceViewModel
